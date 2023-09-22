@@ -7,9 +7,9 @@ render(){
     let img =`${poke}${this.props.id}.png`
     return (
     <div className="Pokecard">
-        <h1>{this.props.id}</h1>
-        <h1>Name:{this.props.name}</h1>
-        <h1>Type:{this.props.type}</h1>
+        <div className="Pokecard-title"><h1>{this.props.name}</h1></div>
+       <div className="Pokecard-data"><h1>Name:{this.props.name}</h1></div> 
+       <div className="Pokecard-data"><h1>Type:{this.props.type}</h1></div> 
         <img src ={img} alt ='fuck u'/>
     </div>
    
