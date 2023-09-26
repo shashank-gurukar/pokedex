@@ -22,7 +22,7 @@ render(){
         <div className="Pokecard-title"><h1>{this.props.name}</h1></div>
        <div className="Pokecard-data"><h1>Name:{this.props.name}</h1></div> 
        <div className="Pokecard-data"><h1>Type:{this.props.type}</h1></div> 
-        <img src ={img} alt ='fuck u'/>
+        <div className="Pokecard-image"><img src ={img} alt ='fuck u'/></div>
     </div>
    
     )
