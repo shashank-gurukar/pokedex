@@ -1,10 +1,22 @@
 import React, {Component} from "react";
 import './pokecard.css';
-const poke='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'
+// const poke='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'
+const poke='https://assets.pokemon.com/assets/cms2/img/pokedex/detail/'
+
+function addZero(id){
+    if(id>999){
+        return id;
+    }
+    else{
+        return `00${id}`.slice(-3)
+    }
+
+}
 
 class Pokecard extends Component{
 render(){
-    let img =`${poke}${this.props.id}.png`
+   let id= addZero(this.props.id);
+    let img =`${poke}${id}.png`
     return (
     <div className="Pokecard">
         <div className="Pokecard-title"><h1>{this.props.name}</h1></div>
